@@ -1,0 +1,14 @@
+{
+  "name": "protocol-explorer",
+  "version": "1.0.0",
+  "description": "Watch the internet work, packet by packet - Protocol Explorer twin",
+  "private": true,
+  "scripts": {
+    "start": "serve . -p 3000",
+    "dev": "serve . -p 3000",
+    "customize": "python customize.py"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
