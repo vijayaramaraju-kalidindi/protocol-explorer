@@ -2,9 +2,9 @@ import os
 import re
 
 def customize_project(
-    name="Vijay Kalidindi",
-    handle="vijayaramaraju",
-    profile_url="https://github.com/vijayaramaraju-kalidindi",
+    name="Vijaya Rama Raju Kalidindi",
+    handle="Vijaya Rama Raju",
+    profile_url="https://www.linkedin.com/in/kalidindi-vijaya-rama-raju-68050718b",
     app_url="https://protocol-explorer.vercel.app",
     project_dir=r"c:\Vj_Data\Study\Protocol Explorer"
 ):

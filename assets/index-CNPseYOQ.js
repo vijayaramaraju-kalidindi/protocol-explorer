@@ -19,11 +19,11 @@ const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/es-CWfXW5jh.js"
     <div class="learning-bars" role="img">${e}</div>
     <div class="learning-sub"><span class="learning-done"></span> / ${Ts.length} <span ${z("COMPLETE")}</span> <span class="dot">·</span> <span class="learning-active"></span> <span ${z("IN PROGRESS")}</span></div>
   </div>`}function jl(e,t){const s=Ts.map(a=>({name:a.name,value:jm(t[a.id]),status:Nr(t[a.id])})).sort((a,r)=>r.value-a.value),n=Math.round(s.reduce((a,r)=>a+r.value,0)/s.length*100),o=e.querySelector(".learning");o.querySelectorAll(".learning-seg").forEach((a,r)=>{const i=s[r];a.classList.toggle("partial",i.value>0&&i.value<1),a.title=`${i.name}: ${Math.round(i.value*100)}%`,a.firstElementChild.style.width=`${i.value*100}%`}),o.querySelector(".learning-bars").setAttribute("aria-label",S("{pct}% complete",{pct:n})),Vt(o.querySelector(".learning-value"),`${n}%`),Vt(o.querySelector(".learning-done"),String(s.filter(a=>a.status==="done").length)),Vt(o.querySelector(".learning-active"),String(s.filter(a=>a.status==="progress").length))}function cy(){return`
-  <a class="credit" href="https://github.com/vijayaramaraju-kalidindi" target="_blank" rel="noopener noreferrer" data-t-title="Vijay Kalidindi on Profile" title="${S("Vijay Kalidindi on Profile")}">
+  <a class="credit" href="https://www.linkedin.com/in/kalidindi-vijaya-rama-raju-68050718b" target="_blank" rel="noopener noreferrer" data-t-title="Vijaya Rama Raju Kalidindi on LinkedIn" title="${S("Vijaya Rama Raju Kalidindi on LinkedIn")}">
     <span class="credit-label" ${z("DESIGNED BY")}</span>
     <span class="credit-name">
-      <svg class="credit-x" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="currentColor" d="M17.75 3h3.07l-6.71 7.67L22 21h-6.18l-4.84-6.33L5.44 21H2.37l7.18-8.2L2 3h6.33l4.38 5.79L17.75 3Zm-1.08 16.18h1.7L7.4 4.73H5.58l11.09 14.45Z"/></svg>
-      vijayaramaraju
+      <svg class="credit-x" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 0 0 1.54-1.54 1.54 1.54 0 0 0-3.08 0c0 .85.69 1.54 1.54 1.54m1.39 9.74v-8.37H5.07v8.37h2.78Z"/></svg>
+      Vijaya Rama Raju
     </span>
   </a>`}const ll=Math.ceil(qt.length/2);function Pu(e){try{const t=qt.find(n=>n.code===Sa()).html,s=new Intl.DisplayNames([t,"en"],{type:"language",languageDisplay:"standard"}).of(e.tag??e.code);return s.charAt(0).toLocaleUpperCase(t)+s.slice(1)}catch{return""}}function dy(){const e=qt.map(t=>`<button type="button" role="menuitemradio" data-lang="${t.code}" aria-checked="${t.code===Sa()}">
       <span class="lang-badge" aria-hidden="true"><span class="lang-short" lang="${t.html}">${t.badge??t.short}</span>${Se.check}</span>
